@@ -5,8 +5,8 @@ console.log(OrbitControls);
 
 // 👉 Sizes (canvas)
 const sizes = {
-  width: 800,
-  height: 800,
+  width: 1920,
+  height: 1080,
 };
 
 // Cursor
@@ -56,6 +56,7 @@ camera.lookAt(mesh.position);
 // Orbit Controls
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
+controls.autoRotate = true;
 // controls.target.y = 1;
 
 
